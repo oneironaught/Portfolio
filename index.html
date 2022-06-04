@@ -4,59 +4,96 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Robert Ruelas</title>
 <link rel="stylesheet" href="./styles.css">
-
-<style>
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-}
-
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.topnav a.active {
-  background-color: #04AA6D;
-  color: white;
-}
-</style>
 </head>
-<body>
 
-<div class="topnav">
-  <a class="active" href="#home">Home</a>
-  <a href="#news">News</a>
-  <a href="#contact">Contact</a>
-  <a href="#about">About</a>
-</div>
+<body>   
 
-<div style="padding-left:16px">
-  <h2>Top Navigation Example</h2>
-  <p>Some content..</p>
-</div>
+  <!-- navigation -->
+  <header>
+    <h1>
+      <a href="/">
+        ROBERT RUELAS
+      </a>
+    </h1>
+    <nav>
+      <ul>
+        <li>
+          <a href="#about-me">About Me</a>
+        </li>
+        <li>
+          <a href="#work">Work</a>
+        </li>
+        <li>
+          <a href="#contact-me">Contact Me</a>
+        </li>
+        <li>
+          <a href="#Resume">Resume</a>
+        </li>
+      </ul>
+    </nav>
+  </header> 
 
+<!--Hero section-->
 <div class="hero-image">
     <div class="hero-text">
       <h1 style="font-size:50px">I am John Doe</h1>
       <p>And I'm a Photographer</p>
-      <button>Hire me</button>
+      <button>Contac me</button>
     </div>
   </div>
+
+  <!--About section-->
+  <div class="about-section">
+    <h1>About Me</h1>
+    <p>Some text about who we are and what we do.</p>
+    <p>Resize the browser window to see that this page is responsive by the way.</p>
+  </div>
+  <!--Work Experience-->
+  <!--Contact section-->
+
+  <h2>Responsive Contact Section</h2>
+<p>Resize the browser window to see the effect.</p>
+
+<div class="container">
+  <div style="text-align:center">
+    <h2>Contact Us</h2>
+    <p>Swing by for a cup of coffee, or leave us a message:</p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="/w3images/map.jpg" alt="some description of image" style="width:100%">
+    </div>
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit" aria-label="submit button" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+
+  <!-- footer -->
+   <footer>
+    <h2>❤️</h2>
+    <div>
+      <a href="./privacy-policy.html">Read Our Policy</a><br />
+      &copy; Robert Ruelas
+    </div>
+  </footer>
+  <!-- footer end -->
+
 </body>
 </html>
