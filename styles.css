@@ -1,6 +1,6 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin: center;
+    padding: 35;
     box-sizing: border-box;
   }
 
@@ -12,16 +12,16 @@
   
   body {
     /* alphanumerical value */
-    color: #39a6b2;
+    color: #024e76;
     font-family: Helvetica, Arial, sans-serif;
   }
   
-  /* apply styles to <header> / Nav bar styles */
+  /* Nav bar styles and image style */
   header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 20px 35px;
+    padding: 5px 15px;
     background-color: #4e4e4e;
     z-index: 9999;
   }
@@ -29,20 +29,34 @@
   header h1 {
     font-weight: bold;
     margin: 0;
-    font-size: 36px;
-    color: #fce138;
+    font-size: 35px;
+    color: white;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
 
+  .logo-image {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: 2px;
+    margin-bottom: -5px;
+}
+
+  /* My name style */
   header a {
     text-decoration: none;
-    color: #fce138;
+    position: relative;
+    color: white;
+    padding: 20px 35px;
+    float: right;
   }
   
   header nav {
     margin: 7px 0;
   }
   
+  /* About, work, contact me, resume section */
   header nav ul {
     display: flex;
     flex-wrap: wrap;
@@ -52,23 +66,29 @@
   }
   
   header nav ul li a {
-    padding: 10px 15px;
+    padding: 5px 35px;
+    float: right;
     font-weight: lighter;
     font-size: 1.55vw;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
 
   header nav ul li a:hover {
-    background: #fce138;
-    color: #024e76;
+    background: #024e76;
+    color: white;
     border-radius: 15px;
     text-shadow: none;
   }
   
+  /* about section */
   body, html {
     height: 100%;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .about-section {
+    text-align: center;
   }
 
   /* Style all section tags */
@@ -77,8 +97,9 @@
   }
   
   /*The hero image */
+  /* https://wccftech.com/2021-16-inch-macbook-pro-specs-m1-chip-same-design/ */
   .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("photographer.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/images/macbook\ pro.jpeg");
     height: 25%;
     background-position: center;
     background-repeat: no-repeat;
@@ -107,7 +128,7 @@
   }
   
   .hero-text button:hover {
-    background-color: #555;
+    background-color: #024e76;
     color: white;
   }
 
